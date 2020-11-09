@@ -11,4 +11,28 @@ Domain count basically checks the domain of users and records each unique (diffe
 
 Finally, the irresposible behavior checks if the number of logins is more than the number of logouts. This is when user does login but does not log out. If the number of logins is more than the number of logouts, a reported will be created with time, activity, and server informaiton for the logged in user. It will also be sorted on theh basis of time. Then finally, the report will be stored and sent back to the admin. 
 
+#Issues faced while coding this project
+
+We faced some issues while coding this project. The first in the very begining while trying to open file. We had the correct code, however, it was not working for some reason. We reached out to the TA's and professor on discord and they helped us with it. The problem was that we had to delete the userlog.log file and redownload it about three times before it finally worked. The code for it was: open_file = open("userlog.log", "r")
+
+Another issue was with the domain count part. We did not set our for statement properly while coding the domain count part. Initially, we had: for "x" in range(int.len(logs)/5). That was wrong and we seeked help from our TA to get the correct code which was: for x in range(int(len(logs)/5)):. There was a mistke with the period in between the "int" and "len". There was also parenthesis missing in between that. 
+
+The next issue was the split operator not working properly. First, we had:
+
+for line in open_file:
+    print(email)
+    email = username@domain.com
+    print(email.split(" @ "))[1]
+    splits = username()
+    
+It was completely wrong and we had to seek to our TA's again for why the split function was not working properly. After consulting with them, we came up with:
+
+for line in open_file:
+    print(line)
+    email = ".com"
+    print(email.split(" @ ")[1])
+    splits = email.split()
+
+
+
 
