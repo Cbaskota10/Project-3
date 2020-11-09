@@ -11,7 +11,7 @@ Domain count basically checks the domain of users and records each unique (diffe
 
 Finally, the irresposible behavior checks if the number of logins is more than the number of logouts. This is when user does login but does not log out. If the number of logins is more than the number of logouts, a reported will be created with time, activity, and server informaiton for the logged in user. It will also be sorted on theh basis of time. Then finally, the report will be stored and sent back to the admin. 
 
-#Issues faced while coding this project
+# Issues faced while coding this project
 
 We faced some issues while coding this project. The first in the very begining while trying to open file. We had the correct code, however, it was not working for some reason. We reached out to the TA's and professor on discord and they helped us with it. The problem was that we had to delete the userlog.log file and redownload it about three times before it finally worked. The code for it was: open_file = open("userlog.log", "r")
 
