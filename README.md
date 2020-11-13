@@ -35,4 +35,12 @@ for line in open_file:
 
 
 
+# Description of Implementation
+
+For all four analyses, we used a for loop " for x in range(int(len(logs)/5)): ". Then defined email as "email" then counted the logs using " count = count+1 ". We used x and y in for loops to implement the rest of the analyses. 
+Finally, we printed it into a new log file by first telling python to create a new notebook, then using. 
+For all four analyses, we used a for loop " for x in range(int(len(logs)/5)): ". Then defined email as "email" then counted the logs using " count = count+1 ". We used x and y in for loops to implement the rest of the analyses new_file_name.write code to write it on to that new file for each report. 
+
+
+
 
